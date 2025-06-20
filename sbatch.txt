@@ -1,0 +1,55 @@
+sbatch_filename.sh
+se) [codepk37@ada ~]$ ls
+ada         nano.save       pl3_64_2048.sh       shapenet_grid64_subsample2048.zip  term_opt_subsampled2048_32.out  ty.py
+miniconda3  pl3_32_2048.sh  pl3_64_2048.sh.save  ten.py                             term_opt_subsampled2048_64.out
+(base) [codepk37@ada ~]$ cat pl3_32_2048.sh
+#!/bin/bash
+#SBATCH -A research
+#SBATCH -c 10
+#SBATCH -w gnode040
+#SBATCH --nodes=1
+#SBATCH --gres=gpu:1
+#SBATCH --time=4-00:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mem-per-cpu=2048
+#SBATCH --output=term_opt_subsampled2048_32.out
+#SBATCH -J pl3_32_subsampled2048
+
+
+module load u18/cuda/10.2 u18/cudnn/7.6.5-cuda-10.2
+
+# Initialize conda for this shell session
+eval "$(conda shell.bash hook)"
+
+#comment - activate conda environment
+conda activate conv_onet
+echo "conda environment activated"
+
+#run the main code
+cd /../../scratch/convolutional_occupancy_networks
+pwd
+
+python train.py configs/pointcloud/shapenet_3plane_2048subsampled_32_32.yaml
+###########################
+
+
+ 1030  scancel 1159465
+ 1031  squeue -u codepk37
+ 1032  sbatch pl3_64_2048.sh
+ 1033  sbatch pl3_32_2048.sh
+ 1034  squeue -u codepk37
+ 1035  sinfo -s
+ 1036  squeue -u codepk37
+ 1037  scontrol show job 1159472
+ 1038  scontrol show node gnode040
+ 1039  ls
+ 1040  cat term_opt_subsampled2048_64.out
+ 1041  cat term_opt_subsampled2048_32.out
+ 1042  squeue -u codepk37
+ 1043  scancel 1159474
+ 1044  squeue -u codepk37
+ 1045  scontrol hold 1159470
+ 1046  squeue -u codepk37
+ 1047  scontrol resume 1159470
+ 1048  squeue -u codepk37
+ 1049  scontrol resume 1159470
