@@ -1,0 +1,244 @@
+==========================================
+SLURM_JOB_ID = 2414983
+SLURM_NODELIST = gnode073
+SLURM_JOB_GPUS = 0
+==========================================
+conda environment activated
+/home2/codepk37
+
+--- Running Diff-ViT Hyperparameter Search (Task 2.2) ---
+Testing 16 hyperparameter combinations...
+
+[1/16] Testing Config: Emb256_D4_H4_Mlp1024_Lr3e-04
+  Epoch 5/50: Test Acc=0.6149
+  Epoch 10/50: Test Acc=0.6188
+  Epoch 15/50: Test Acc=0.6125
+  Epoch 20/50: Test Acc=0.6085
+  Epoch 25/50: Test Acc=0.6145
+  Epoch 30/50: Test Acc=0.6200
+  Epoch 35/50: Test Acc=0.6249
+  Epoch 40/50: Test Acc=0.6227
+  Epoch 45/50: Test Acc=0.6253
+  Epoch 50/50: Test Acc=0.6245
+  -> Train Time: 766.64s | Final Acc: 0.6245
+  --> New Best Accuracy!
+
+[2/16] Testing Config: Emb256_D4_H4_Mlp768_Lr3e-04
+  Epoch 5/50: Test Acc=0.6147
+  Epoch 10/50: Test Acc=0.6161
+  Epoch 15/50: Test Acc=0.6161
+  Epoch 20/50: Test Acc=0.6120
+  Epoch 25/50: Test Acc=0.6201
+  Epoch 30/50: Test Acc=0.6203
+  Epoch 35/50: Test Acc=0.6158
+  Epoch 40/50: Test Acc=0.6190
+  Epoch 45/50: Test Acc=0.6166
+  Epoch 50/50: Test Acc=0.6242
+  -> Train Time: 721.14s | Final Acc: 0.6242
+
+[3/16] Testing Config: Emb256_D4_H8_Mlp1024_Lr3e-04
+  Epoch 5/50: Test Acc=0.6279
+  Epoch 10/50: Test Acc=0.6362
+  Epoch 15/50: Test Acc=0.6283
+  Epoch 20/50: Test Acc=0.6276
+  Epoch 25/50: Test Acc=0.6317
+  Epoch 30/50: Test Acc=0.6336
+  Epoch 35/50: Test Acc=0.6350
+  Epoch 40/50: Test Acc=0.6374
+  Epoch 45/50: Test Acc=0.6339
+  Epoch 50/50: Test Acc=0.6419
+  -> Train Time: 840.33s | Final Acc: 0.6419
+  --> New Best Accuracy!
+
+[4/16] Testing Config: Emb256_D4_H8_Mlp768_Lr3e-04
+  Epoch 5/50: Test Acc=0.6300
+  Epoch 10/50: Test Acc=0.6335
+  Epoch 15/50: Test Acc=0.6308
+  Epoch 20/50: Test Acc=0.6292
+  Epoch 25/50: Test Acc=0.6322
+  Epoch 30/50: Test Acc=0.6302
+  Epoch 35/50: Test Acc=0.6353
+  Epoch 40/50: Test Acc=0.6416
+  Epoch 45/50: Test Acc=0.6291
+  Epoch 50/50: Test Acc=0.6387
+  -> Train Time: 794.81s | Final Acc: 0.6387
+
+[5/16] Testing Config: Emb256_D6_H4_Mlp1024_Lr3e-04
+  Epoch 5/50: Test Acc=0.6196
+  Epoch 10/50: Test Acc=0.6276
+  Epoch 15/50: Test Acc=0.6247
+  Epoch 20/50: Test Acc=0.6326
+  Epoch 25/50: Test Acc=0.6245
+  Epoch 30/50: Test Acc=0.6299
+  Epoch 35/50: Test Acc=0.6291
+  Epoch 40/50: Test Acc=0.6387
+  Epoch 45/50: Test Acc=0.6424
+  Epoch 50/50: Test Acc=0.6427
+  -> Train Time: 1083.82s | Final Acc: 0.6427
+  --> New Best Accuracy!
+
+[6/16] Testing Config: Emb256_D6_H4_Mlp768_Lr3e-04
+  Epoch 5/50: Test Acc=0.6160
+  Epoch 10/50: Test Acc=0.6133
+  Epoch 15/50: Test Acc=0.6185
+  Epoch 20/50: Test Acc=0.6238
+  Epoch 25/50: Test Acc=0.6236
+  Epoch 30/50: Test Acc=0.6302
+  Epoch 35/50: Test Acc=0.6363
+  Epoch 40/50: Test Acc=0.6246
+  Epoch 45/50: Test Acc=0.6300
+  Epoch 50/50: Test Acc=0.6334
+  -> Train Time: 1008.22s | Final Acc: 0.6334
+
+[7/16] Testing Config: Emb256_D6_H8_Mlp1024_Lr3e-04
+  Epoch 5/50: Test Acc=0.6341
+  Epoch 10/50: Test Acc=0.6357
+  Epoch 15/50: Test Acc=0.6458
+  Epoch 20/50: Test Acc=0.6536
+  Epoch 25/50: Test Acc=0.6408
+  Epoch 30/50: Test Acc=0.6524
+  Epoch 35/50: Test Acc=0.6550
+  Epoch 40/50: Test Acc=0.6523
+  Epoch 45/50: Test Acc=0.6508
+  Epoch 50/50: Test Acc=0.6471
+  -> Train Time: 1200.32s | Final Acc: 0.6471
+  --> New Best Accuracy!
+
+[8/16] Testing Config: Emb256_D6_H8_Mlp768_Lr3e-04
+  Epoch 5/50: Test Acc=0.6309
+  Epoch 10/50: Test Acc=0.6296
+  Epoch 15/50: Test Acc=0.6354
+  Epoch 20/50: Test Acc=0.6386
+  Epoch 25/50: Test Acc=0.6413
+  Epoch 30/50: Test Acc=0.6374
+  Epoch 35/50: Test Acc=0.6380
+  Epoch 40/50: Test Acc=0.6404
+  Epoch 45/50: Test Acc=0.6353
+  Epoch 50/50: Test Acc=0.6365
+  -> Train Time: 1122.22s | Final Acc: 0.6365
+
+[9/16] Testing Config: Emb192_D4_H4_Mlp1024_Lr3e-04
+  Epoch 5/50: Test Acc=0.6068
+  Epoch 10/50: Test Acc=0.6227
+  Epoch 15/50: Test Acc=0.6192
+  Epoch 20/50: Test Acc=0.6218
+  Epoch 25/50: Test Acc=0.6193
+  Epoch 30/50: Test Acc=0.6171
+  Epoch 35/50: Test Acc=0.6166
+  Epoch 40/50: Test Acc=0.6242
+  Epoch 45/50: Test Acc=0.6262
+  Epoch 50/50: Test Acc=0.6227
+  -> Train Time: 676.37s | Final Acc: 0.6227
+
+[10/16] Testing Config: Emb192_D4_H4_Mlp768_Lr3e-04
+  Epoch 5/50: Test Acc=0.6151
+  Epoch 10/50: Test Acc=0.6147
+  Epoch 15/50: Test Acc=0.6182
+  Epoch 20/50: Test Acc=0.6131
+  Epoch 25/50: Test Acc=0.6217
+  Epoch 30/50: Test Acc=0.6233
+  Epoch 35/50: Test Acc=0.6252
+  Epoch 40/50: Test Acc=0.6152
+  Epoch 45/50: Test Acc=0.6111
+  Epoch 50/50: Test Acc=0.6249
+  -> Train Time: 665.55s | Final Acc: 0.6249
+
+[11/16] Testing Config: Emb192_D4_H8_Mlp1024_Lr3e-04
+  Epoch 5/50: Test Acc=0.6355
+  Epoch 10/50: Test Acc=0.6275
+  Epoch 15/50: Test Acc=0.6266
+  Epoch 20/50: Test Acc=0.6340
+  Epoch 25/50: Test Acc=0.6370
+  Epoch 30/50: Test Acc=0.6303
+  Epoch 35/50: Test Acc=0.6308
+  Epoch 40/50: Test Acc=0.6361
+  Epoch 45/50: Test Acc=0.6319
+  Epoch 50/50: Test Acc=0.6399
+  -> Train Time: 745.10s | Final Acc: 0.6399
+
+[12/16] Testing Config: Emb192_D4_H8_Mlp768_Lr3e-04
+  Epoch 5/50: Test Acc=0.6192
+  Epoch 10/50: Test Acc=0.6242
+  Epoch 15/50: Test Acc=0.6257
+  Epoch 20/50: Test Acc=0.6195
+  Epoch 25/50: Test Acc=0.6180
+  Epoch 30/50: Test Acc=0.6223
+  Epoch 35/50: Test Acc=0.6237
+  Epoch 40/50: Test Acc=0.6256
+  Epoch 45/50: Test Acc=0.6321
+  Epoch 50/50: Test Acc=0.6277
+  -> Train Time: 715.01s | Final Acc: 0.6277
+
+[13/16] Testing Config: Emb192_D6_H4_Mlp1024_Lr3e-04
+  Epoch 5/50: Test Acc=0.6257
+  Epoch 10/50: Test Acc=0.6344
+  Epoch 15/50: Test Acc=0.6342
+  Epoch 20/50: Test Acc=0.6380
+  Epoch 25/50: Test Acc=0.6332
+  Epoch 30/50: Test Acc=0.6399
+  Epoch 35/50: Test Acc=0.6395
+  Epoch 40/50: Test Acc=0.6385
+  Epoch 45/50: Test Acc=0.6399
+  Epoch 50/50: Test Acc=0.6493
+  -> Train Time: 941.59s | Final Acc: 0.6493
+  --> New Best Accuracy!
+
+[14/16] Testing Config: Emb192_D6_H4_Mlp768_Lr3e-04
+  Epoch 5/50: Test Acc=0.6252
+  Epoch 10/50: Test Acc=0.6244
+  Epoch 15/50: Test Acc=0.6246
+  Epoch 20/50: Test Acc=0.6248
+  Epoch 25/50: Test Acc=0.6240
+  Epoch 30/50: Test Acc=0.6247
+  Epoch 35/50: Test Acc=0.6261
+  Epoch 40/50: Test Acc=0.6308
+  Epoch 45/50: Test Acc=0.6266
+  Epoch 50/50: Test Acc=0.6329
+  -> Train Time: 885.75s | Final Acc: 0.6329
+
+[15/16] Testing Config: Emb192_D6_H8_Mlp1024_Lr3e-04
+  Epoch 5/50: Test Acc=0.6475
+  Epoch 10/50: Test Acc=0.6418
+  Epoch 15/50: Test Acc=0.6383
+  Epoch 20/50: Test Acc=0.6559
+  Epoch 25/50: Test Acc=0.6479
+  Epoch 30/50: Test Acc=0.6491
+  Epoch 35/50: Test Acc=0.6473
+  Epoch 40/50: Test Acc=0.6482
+  Epoch 45/50: Test Acc=0.6463
+  Epoch 50/50: Test Acc=0.6526
+  -> Train Time: 1036.68s | Final Acc: 0.6526
+  --> New Best Accuracy!
+
+[16/16] Testing Config: Emb192_D6_H8_Mlp768_Lr3e-04
+  Epoch 5/50: Test Acc=0.6392
+  Epoch 10/50: Test Acc=0.6389
+  Epoch 15/50: Test Acc=0.6401
+  Epoch 20/50: Test Acc=0.6374
+  Epoch 25/50: Test Acc=0.6336
+  Epoch 30/50: Test Acc=0.6391
+  Epoch 35/50: Test Acc=0.6352
+  Epoch 40/50: Test Acc=0.6358
+  Epoch 45/50: Test Acc=0.6391
+  Epoch 50/50: Test Acc=0.6441
+  -> Train Time: 975.47s | Final Acc: 0.6441
+
+--- Hyperparameter Search Summary ---
+Config: Emb192_D6_H8_Mlp1024_Lr3e-04 | Accuracy: 0.6526
+Config: Emb192_D6_H4_Mlp1024_Lr3e-04 | Accuracy: 0.6493
+Config: Emb256_D6_H8_Mlp1024_Lr3e-04 | Accuracy: 0.6471
+Config: Emb192_D6_H8_Mlp768_Lr3e-04 | Accuracy: 0.6441
+Config: Emb256_D6_H4_Mlp1024_Lr3e-04 | Accuracy: 0.6427
+Config: Emb256_D4_H8_Mlp1024_Lr3e-04 | Accuracy: 0.6419
+Config: Emb192_D4_H8_Mlp1024_Lr3e-04 | Accuracy: 0.6399
+Config: Emb256_D4_H8_Mlp768_Lr3e-04 | Accuracy: 0.6387
+Config: Emb256_D6_H8_Mlp768_Lr3e-04 | Accuracy: 0.6365
+Config: Emb256_D6_H4_Mlp768_Lr3e-04 | Accuracy: 0.6334
+Config: Emb192_D6_H4_Mlp768_Lr3e-04 | Accuracy: 0.6329
+Config: Emb192_D4_H8_Mlp768_Lr3e-04 | Accuracy: 0.6277
+Config: Emb192_D4_H4_Mlp768_Lr3e-04 | Accuracy: 0.6249
+Config: Emb256_D4_H4_Mlp1024_Lr3e-04 | Accuracy: 0.6245
+Config: Emb256_D4_H4_Mlp768_Lr3e-04 | Accuracy: 0.6242
+Config: Emb192_D4_H4_Mlp1024_Lr3e-04 | Accuracy: 0.6227
+
+Best Config Found: Emb192_D6_H8_Mlp1024_Lr3e-04 | Best Accuracy: 0.6526
