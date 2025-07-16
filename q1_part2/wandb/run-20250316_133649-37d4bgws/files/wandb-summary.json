@@ -1,0 +1,1 @@
+{"total loss":12.375181696796975,"RPN Localization Loss":0.11718211604274839,"FRCNN Localization Loss":0.3480845078143228,"_timestamp":1.742112560827251e+09,"FRCNN Angle Loss":9.683756825458481,"_step":0,"_wandb":{"runtime":295},"_runtime":151.132385987,"Map Score":0.240864815368347,"FRCNN Classification Loss":1.9804501215300236,"RPN Classification Loss":0.24570812595139938}
